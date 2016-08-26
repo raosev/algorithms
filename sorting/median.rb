@@ -11,9 +11,6 @@ module Sorting
     # it is sufficient to select pivot_index randomly,
     # which should avoid degenerate cases (which might happen if the original array is already mostly sorted).
 
-    
-
-
     # Overview
     # https://www.dropbox.com/s/wceajmzg9zl89n6/httpatomoreillycomsourceoreillyimages595747.png?dl=0
     # Median sort in action
@@ -32,7 +29,7 @@ module Sorting
     end
 
 
-    # private
+     private
 
     # In linear time, group the subarray array[left, right] around a pivot
     # element pivot=ar[pivot_index] by storing pivot into its proper
@@ -102,7 +99,5 @@ module Sorting
   end
 end
 
-
-# puts Sorting::Median.partition([15,9,8,1,4,11,7,12,13,6,5,3,16,2,10,14], 0, 15, 9)
 array = [15,9,8,1,4,11,7,12,13,6,5,3,16,2,10,14]
 Sorting::Median.sort(array,0 , array.size-1 )
